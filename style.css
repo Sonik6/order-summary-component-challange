@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(93, 149, 206);
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+h1{
+    font-size: 28px;
+}
+.container{
+    background-color: #fff;
+    margin: 5vh auto;
+    min-width: 360px;
+    max-width: 30vw;
+    text-align: center;
+    box-shadow: 1px 1px 6px 5px rgb(194, 193, 193);
+    border-radius: 30px 30px 30px 30px;
+}
+
+
+.hero img{
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 0px 35px 25px 35px;
+    line-height: 1.6em;
+    max-width: 300px;
+    color: rgb(129, 129, 129);
+}
+span{
+    display: inline-flex;
+    align-items: center;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+}
+.price{
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: auto 40px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+.music{
+    display: flex;
+    gap: 15px;
+}
+
+.proceed{
+    font-weight: 700;
+    color: white;
+    background-color: rgb(74, 125, 177);
+    padding: 20px 30px;
+    margin: 30px 50px 0px 50px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.cancel{
+    box-sizing: border-box;
+    height: auto;
+    color: rgb(129, 122, 122);
+    padding: 20px 30px;
+    margin: 0px 50px 50px 50px;
+    text-align: center;
+    border-radius: 13px;  
+}
+
+.proceed:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(148, 137, 211, 0.7);
+
+}
+.cancel:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(34, 32, 32, 0.7);
+}
+
+a:hover{
+    text-shadow: 0px 0px 6px rgba(63, 107, 165, 0.8);
+    font-size: 17px;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+        background-color: rgb(93, 149, 206);
+    }
+    h1{
+        font-size:x-large;
+    }
+}
